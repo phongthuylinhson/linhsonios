@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/nav_LichTrachCat">
+
+    <fragment
+        android:id="@+id/nav_MaiHoa"
+        android:name="com.thanhtam.linhsondich.fragment.MaiHoa"
+        android:label="@string/maihoa"
+        tools:layout="@layout/fragment_mai_hoa" >
+        <action
+            android:id="@+id/action_maiHoa_to_dichResult"
+            app:destination="@id/dichResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_LucHao"
+        android:name="com.thanhtam.linhsondich.fragment.LucHao"
+        android:label="@string/luchao"
+        tools:layout="@layout/fragment_luc_hao" >
+        <action
+            android:id="@+id/action_lucHao_to_dichResult"
+            app:destination="@id/dichResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/dichResult"
+        android:name="com.thanhtam.linhsondich.fragment.DichResult"
+        android:label="@string/kinhdich"
+        tools:layout="@layout/fragment_dich_result" >
+        <action
+            android:id="@+id/action_dichResult_to_nav_MaiHoa"
+            app:destination="@id/nav_MaiHoa" />
+        <action
+            android:id="@+id/action_dichResult_to_nav_LucHao"
+            app:destination="@id/nav_LucHao" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_aboutme"
+        android:name="com.thanhtam.linhsondich.fragment.About"
+        android:label="@string/about_us"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_queNgauNhien"
+        android:name="com.thanhtam.linhsondich.fragment.QueNgauNhien"
+        android:label="@string/ngaunhien"
+        tools:layout="@layout/fragment_que_ngau_nhien" >
+        <action
+            android:id="@+id/action_nav_queNgauNhien_to_dichResult"
+            app:destination="@id/dichResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_LichTrachCat"
+        android:name="com.thanhtam.linhsondich.fragment.LichTrachCat"
+        android:label="@string/lichtrachcat"
+        tools:layout="@layout/fragment_lich_trach_cat" />
+    <fragment
+        android:id="@+id/nav_lichTrachCatDetails"
+        android:name="com.thanhtam.linhsondich.fragment.LichTrachCatDetails"
+        android:label="@string/lichtrachcat"
+        tools:layout="@layout/fragment_lich_trach_cat_details" />
+    <fragment
+        android:id="@+id/nav_checkupdate"
+        android:name="com.thanhtam.linhsondich.fragment.CheckUpdateFragment"
+        android:label="@string/check_update" />
+</navigation>

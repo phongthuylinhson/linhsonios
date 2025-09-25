@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="root_layout_padding">8dp</dimen>
+
+    <dimen name="cardinal_direction_text_ratio">0.20f</dimen>
+    <dimen name="degree_text_ratio">0.04f</dimen>
+
+    <dimen name="status_degrees_text_size_factor">0.14f</dimen>
+    <dimen name="status_cardinal_direction_text_size_factor">0.055f</dimen>
+    <dimen name="cardinal_direction_text_size_factor">0.08f</dimen>
+    <dimen name="degree_text_size_factor">0.03f</dimen>
+
+<!--    xhdpi-->
+<!--    Tuvi-->
+    <dimen name="xhdpi_tuvi_infor">7sp</dimen>
+    <dimen name="xhdpi_tuvi__chinhtinh">6sp</dimen>
+    <dimen name="xhdpi_tuvi__phutinh">5sp</dimen>
+    <dimen name="xhdpi_tuvi__paddingtop">20dp</dimen>
+    <dimen name="xhdpi_tuvi__cung_paddingtop">4dp</dimen>
+    <dimen name="xhdpi_tuvi__chinhtinh_paddingtop">2dp</dimen>
+    <dimen name="xhdpi_tuvi__height">530dp</dimen>
+    <dimen name="xhdpi_tuvi__cung">5sp</dimen>
+    <dimen name="xhdpi_tuvi__paddingtuantriet">4dp</dimen>
+    <dimen name="xhdpi_tuvi__marginleft_cottrai">2dp</dimen>
+    <dimen name="xhdpi_tuvi__copyright">5sp</dimen>
+    <dimen name="xhdpi_tuvi_marginstart_cotphai">2sp</dimen>
+    <!--    Kinh Dich-->
+    <dimen name="xhdpi_kinhdich_textinfor">20sp</dimen>
+    <dimen name="xhdpi_kinhdich_paddingtopinfor">8dp</dimen>
+    <dimen name="xhdpi_kinhdich_button_pick_date">13sp</dimen>
+    <!--    xhdpi land -->
+    <!--    Tu Vi-->
+    <dimen name="xhdpi_land_tuvi_infor">12sp</dimen>
+    <dimen name="xhdpi_land_tuvi__chinhtinh">12sp</dimen>
+    <dimen name="xhdpi_land_tuvi__phutinh">8sp</dimen>
+    <dimen name="xhdpi_land_tuvi__paddingtop">40dp</dimen>
+    <dimen name="xhdpi_land_tuvi__height">230dp</dimen>
+    <dimen name="xhdpi_land_tuvi__cung">9sp</dimen>
+    <dimen name="xhdpi_land_tuvi__paddingtuantriet">7dp</dimen>
+    <dimen name="xhdpi_land_tuvi__paddingcottrai">3dp</dimen>
+<!--    xxhdpi -->
+<!--    Tu Vi-->
+    <dimen name="xxhdpi_tuvi_infor">9sp</dimen>
+    <dimen name="xxhdpi_tuvi__chinhtinh">8sp</dimen>
+    <dimen name="xxhdpi_tuvi__phutinh">6sp</dimen>
+    <dimen name="xxhdpi_tuvi__paddingtop">22dp</dimen>
+    <dimen name="xxhdpi_tuvi__chinhtinh_paddingtop">2dp</dimen>
+    <dimen name="xxhdpi_tuvi__cung_paddingtop">4dp</dimen>
+    <dimen name="xxhdpi_tuvi__height">550dp</dimen>
+    <dimen name="xxhdpi_tuvi__cung">7sp</dimen>
+    <dimen name="xxhdpi_tuvi__paddingtuantriet">4dp</dimen>
+    <dimen name="xxhdpi_tuvi__marginleft_cottrai">3dp</dimen>
+    <dimen name="xxhdpi_tuvi__copyright">6sp</dimen>
+    <dimen name="xxhdpi_tuvi_marginstart_cotphai">2sp</dimen>
+<!--    Kinh Dich-->
+    <dimen name="xxhdpi_kinhdich_textinfor">20sp</dimen>
+    <dimen name="xxhdpi_kinhdich_paddingtopinfor">8dp</dimen>
+    <dimen name="xxhdpi_kinhdich_button_pick_date">15sp</dimen>
+    <!--    xxhdpi land -->
+    <!--    Tu Vi-->
+    <dimen name="xxhdpi_land_tuvi_infor">16sp</dimen>
+    <dimen name="xxhdpi_land_tuvi__chinhtinh">16sp</dimen>
+    <dimen name="xxhdpi_land_tuvi__phutinh">13sp</dimen>
+    <dimen name="xxhdpi_land_tuvi__paddingtop">40dp</dimen>
+    <dimen name="xxhdpi_land_tuvi__height">250dp</dimen>
+    <dimen name="xxhdpi_land_tuvi__cung">13sp</dimen>
+    <dimen name="xxhdpi_land_tuvi__paddingtuantriet">9dp</dimen>
+    <dimen name="xxhdpi_land_tuvi__paddingcottrai">8dp</dimen>
+    <!--    dfhdpi-->
+    <!--    Tuvi-->
+    <dimen name="dfhdpi_tuvi_infor">6sp</dimen>
+    <dimen name="dfhdpi_tuvi__chinhtinh">5sp</dimen>
+    <dimen name="dfhdpi_tuvi__phutinh">4sp</dimen>
+    <dimen name="dfhdpi_tuvi__paddingtop">19dp</dimen>
+    <dimen name="dfhdpi_tuvi__cung_paddingtop">4dp</dimen>
+    <dimen name="dfhdpi_tuvi__chinhtinh_paddingtop">2dp</dimen>
+    <dimen name="dfhdpi_tuvi__height">530dp</dimen>
+    <dimen name="dfhdpi_tuvi__cung">4sp</dimen>
+    <dimen name="dfhdpi_tuvi__paddingtuantriet">3dp</dimen>
+    <dimen name="dfhdpi_tuvi__marginleft_cottrai">2dp</dimen>
+    <dimen name="dfhdpi_tuvi__copyright">4sp</dimen>
+    <dimen name="dfhdpi_tuvi_marginstart_cotphai">1sp</dimen>
+
+    ////////// Services
+    /// xxhdpi
+    <dimen name="xxhdpi_services_cacdichvu">18sp</dimen>
+    <dimen name="xxhdpi_services_details">15sp</dimen>
+
+
+    ///////xxhdpi
+    <dimen name="xxhdpi_kinhdich_tenque">11sp</dimen>
+    <dimen name="xxhdpi_kinhdich_content">9sp</dimen>
+    <dimen name="xxhdpi_kinhdich_thansat">10sp</dimen>
+    <dimen name="xxhdpi_kinhdich_ntn">11sp</dimen>
+    <dimen name="xxhdpi_kinhdich_phucthan">7sp</dimen>
+    <dimen name="xxhdpi_kinhdich_width_image">40dp</dimen>
+    <dimen name="xxhdpi_kinhdich_height_image">5dp</dimen>
+    <dimen name="xxhdpi_kinhdich_copyright">9sp</dimen>
+    /////xhdpi
+    <dimen name="xhdpi_kinhdich_tenque">8sp</dimen>
+    <dimen name="xhdpi_kinhdich_content">7sp</dimen>
+    <dimen name="xhdpi_kinhdich_thansat">8sp</dimen>
+    <dimen name="xhdpi_kinhdich_ntn">8sp</dimen>
+    <dimen name="xhdpi_kinhdich_phucthan">5sp</dimen>
+    <dimen name="xhdpi_kinhdich_width_image">35dp</dimen>
+    <dimen name="xhdpi_kinhdich_height_image">5dp</dimen>
+    <dimen name="xhdpi_kinhdich_copyright">8sp</dimen>
+    ////dfhdpi
+    <dimen name="dfhdpi_kinhdich_tenque">8sp</dimen>
+    <dimen name="dfhdpi_kinhdich_content">6sp</dimen>
+    <dimen name="dfhdpi_kinhdich_thansat">7sp</dimen>
+    <dimen name="dfhdpi_kinhdich_ntn">8sp</dimen>
+    <dimen name="dfhdpi_kinhdich_phucthan">5sp</dimen>
+    <dimen name="dfhdpi_kinhdich_width_image">30dp</dimen>
+    <dimen name="dfhdpi_kinhdich_height_image">5dp</dimen>
+    <dimen name="dfhdpi_kinhdich_copyright">8sp</dimen>
+    //////// Lịch Trạch Cát
+    <dimen name="dfhdpi_lich_keychinh">15sp</dimen>
+    <dimen name="dfhdpi_lich_heightnumber">80dp</dimen>
+    <dimen name="dfhdpi_lich_keydetails">12sp</dimen>
+    <dimen name="dfhdpi_lich_textsize">12sp</dimen>
+    <dimen name="dfhdpi_lich_textselectedsize">14sp</dimen>
+
+    <dimen name="xhdpi_lich_keychinh">17sp</dimen>
+    <dimen name="xhdpi_lich_heightnumber">90dp</dimen>
+    <dimen name="xhdpi_lich_keydetails">13sp</dimen>
+    <dimen name="xhdpi_lich_textsize">13sp</dimen>
+    <dimen name="xhdpi_lich_textselectedsize">15sp</dimen>
+
+    <dimen name="xxhdpi_lich_keychinh">19sp</dimen>
+    <dimen name="xxhdpi_lich_heightnumber">100dp</dimen>
+    <dimen name="xxhdpi_lich_keydetails">14sp</dimen>
+    <dimen name="xxhdpi_lich_textsize">15sp</dimen>
+    <dimen name="xxhdpi_lich_textselectedsize">17sp</dimen>
+    //////Ky Mon
+    <dimen name="kymon">14sp</dimen>
+</resources>

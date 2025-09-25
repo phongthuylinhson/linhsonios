@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_LichTrachCat"
+            android:icon="@drawable/ic_services"
+            android:title="@string/lichtrachcat" />
+        <item
+            android:id="@+id/nav_MaiHoa"
+            android:icon="@drawable/ic_services"
+            android:title="@string/maihoa" />
+        <item
+            android:id="@+id/nav_LucHao"
+            android:icon="@drawable/ic_services"
+            android:title="@string/luchao" />
+        <item
+            android:id="@+id/nav_queNgauNhien"
+            android:icon="@drawable/ic_services"
+            android:title="@string/ngaunhien" />
+        <item
+            android:id="@+id/nav_checkupdate"
+            android:icon="@drawable/icon_aboutus"
+            android:title="@string/check_update" />
+    </group>
+</menu>

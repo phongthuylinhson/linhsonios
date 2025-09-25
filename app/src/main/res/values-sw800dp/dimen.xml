@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="kinhdich_tenque" tools:ignore="MissingDefaultResource">12sp</dimen>
+    <dimen name="kinhdich_content" tools:ignore="MissingDefaultResource">11sp</dimen>
+    <dimen name="kinhdich_thansat" tools:ignore="MissingDefaultResource">12sp</dimen>
+    <dimen name="kinhdich_ntn" tools:ignore="MissingDefaultResource">12sp</dimen>
+    <dimen name="kinhdich_phucthan" tools:ignore="MissingDefaultResource">8sp</dimen>
+    <dimen name="kinhdich_width_image" tools:ignore="MissingDefaultResource">45dp</dimen>
+    <dimen name="kinhdich_height_image" tools:ignore="MissingDefaultResource">6dp</dimen>
+    <dimen name="kinhdich_copyright" tools:ignore="MissingDefaultResource">10sp</dimen>
+    <dimen name="kinhdich_guildlane_luchao" tools:ignore="MissingDefaultResource">0.5</dimen>
+
+    <dimen name="tuvi_infor" tools:ignore="MissingDefaultResource">9sp</dimen>
+    <dimen name="tuvi__chinhtinh" tools:ignore="MissingDefaultResource">8sp</dimen>
+    <dimen name="tuvi__chinhtinh_namphai" tools:ignore="MissingDefaultResource">8sp</dimen>
+    <dimen name="tuvi__phutinh" tools:ignore="MissingDefaultResource">6sp</dimen>
+    <dimen name="tuvi__phutinh_namphai" tools:ignore="MissingDefaultResource">7sp</dimen>
+    <dimen name="tuvi__paddingtop" tools:ignore="MissingDefaultResource">20dp</dimen>
+    <dimen name="tuvi__paddingtop_namphai" tools:ignore="MissingDefaultResource">20dp</dimen>
+    <dimen name="tuvi__paddingtop_bacphai" tools:ignore="MissingDefaultResource">22dp</dimen>
+    <dimen name="tuvi__cung_paddingtop" tools:ignore="MissingDefaultResource">4dp</dimen>
+    <dimen name="tuvi__chinhtinh_paddingtop" tools:ignore="MissingDefaultResource">0dp</dimen>
+    <dimen name="tuvi__chinhtinh_paddingtop_bacphai" tools:ignore="MissingDefaultResource">2dp</dimen>
+    <dimen name="tuvi__height" tools:ignore="MissingDefaultResource">550dp</dimen>
+    <dimen name="tuvi__cung" tools:ignore="MissingDefaultResource">6sp</dimen>
+    <dimen name="tuvi__paddingtuantriet" tools:ignore="MissingDefaultResource">4dp</dimen>
+    <dimen name="tuvi__marginleft_cottrai" tools:ignore="MissingDefaultResource">3dp</dimen>
+    <dimen name="tuvi__copyright" tools:ignore="MissingDefaultResource">6sp</dimen>
+    <dimen name="tuvi_marginstart_cotphai" tools:ignore="MissingDefaultResource">2dp</dimen>
+    <dimen name="tuvi_paddingtop_coppyright" tools:ignore="MissingDefaultResource">5dp</dimen>
+    <dimen name="tuvi_paddingleft_right_content" tools:ignore="MissingDefaultResource">2dp</dimen>
+    <dimen name="tuvi_guideline0" tools:ignore="MissingDefaultResource">0</dimen>
+    <dimen name="tuvi_guideline1" tools:ignore="MissingDefaultResource">0.25</dimen>
+    <dimen name="tuvi_guideline2" tools:ignore="MissingDefaultResource">0.5</dimen>
+    <dimen name="tuvi_guideline3" tools:ignore="MissingDefaultResource">0.75</dimen>
+    <dimen name="tuvi_guideline4" tools:ignore="MissingDefaultResource">1</dimen>
+    <dimen name="tuvi_guideline5" tools:ignore="MissingDefaultResource">580dp</dimen>
+    <dimen name="tuvi_guideline5_namphai" tools:ignore="MissingDefaultResource">560dp</dimen>
+    <dimen name="tuvi_guideline5_bacphai_toigian" tools:ignore="MissingDefaultResource">450dp</dimen>
+    <dimen name="tuvi_picknumber_height" tools:ignore="MissingDefaultResource">180dp</dimen>
+    <dimen name="tuvi_btnlq_tuvi_fragment" tools:ignore="MissingDefaultResource">40dp</dimen>
+    <dimen name="tuvi_size_namxem" tools:ignore="MissingDefaultResource">20sp</dimen>
+
+    <dimen name="kymon_content" tools:ignore="MissingDefaultResource">14sp</dimen>
+    <dimen name="kymon_content_tc" tools:ignore="MissingDefaultResource">17sp</dimen>
+    <dimen name="kymon_ntn" tools:ignore="MissingDefaultResource">12sp</dimen>
+
+    <dimen name="huyenkhong_content" tools:ignore="MissingDefaultResource">17sp</dimen>
+
+    <dimen name="quytang_content" tools:ignore="MissingDefaultResource">7sp</dimen>
+    <dimen name="quytang_ntn" tools:ignore="MissingDefaultResource">12sp</dimen>
+    <dimen name="quytang_gui_per" tools:ignore="MissingDefaultResource">0.5</dimen>
+
+    <dimen name="lich_keydetails" tools:ignore="MissingDefaultResource">14sp</dimen>
+    <dimen name="lich_details" tools:ignore="MissingDefaultResource">12sp</dimen>
+    <dimen name="lich_heightnumber" tools:ignore="MissingDefaultResource">100dp</dimen>
+    <dimen name="lich_keychinh" tools:ignore="MissingDefaultResource">19sp</dimen>
+    <dimen name="lich_selectedTextSize" tools:ignore="MissingDefaultResource">17sp</dimen>
+    <dimen name="lich_textSize" tools:ignore="MissingDefaultResource">15sp</dimen>
+
+    <dimen name="about_content" tools:ignore="MissingDefaultResource">18sp</dimen>
+    <dimen name="about_circleImage_width" tools:ignore="MissingDefaultResource">150dp</dimen>
+    <dimen name="about_bio_height" tools:ignore="MissingDefaultResource">120dp</dimen>
+    <dimen name="about_imageView_width" tools:ignore="MissingDefaultResource">40dp</dimen>
+    <dimen name="about_imageView_height" tools:ignore="MissingDefaultResource">40dp</dimen>
+    <dimen name="about_imageView_paddingleft" tools:ignore="MissingDefaultResource">32dp</dimen>
+
+    <dimen name="tutru_infor" tools:ignore="MissingDefaultResource">12sp</dimen>
+    <dimen name="tutru_paddingleft_right_content" tools:ignore="MissingDefaultResource">1dp</dimen>
+</resources>

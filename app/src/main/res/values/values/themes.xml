@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.covanhuyenhoc" parent="Theme.AppCompat">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/white</item>
+        <!-- Secondary brand color. -->
+<!--        <item name="colorSecondary">@color/teal_200</item>-->
+<!--        <item name="colorSecondaryVariant">@color/teal_700</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+<!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.huyenhoc.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="background">@drawable/backgrounda</item>
+<!--        <item name="actionMenuTextColor">@color/white</item>-->
+        <!-- Secondary brand color. -->
+<!--        <item name="colorSecondary">@color/teal_200</item>-->
+<!--        <item name="colorSecondaryVariant">@color/teal_700</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+<!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>-->
+        <!-- Customize your theme here. -->
+<!--        <item name="actionOverflowButtonStyle">@style/actionbardot</item>-->
+    </style>
+
+<!--    <style name="actionbardot" parent="Widget.AppCompat.ActionButton.Overflow">-->
+<!--        <item name="android:tint">@android:color/black</item>-->
+<!--    </style>-->
+
+    <style name="contain" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/vl_dekar</item>
+    </style>
+    <style name="navigation_menu_them">
+        <!--         Color of text and icon when SELECTED-->
+        <item name="colorPrimary">@color/black</item>
+        <!--        background color when SELECTED-->
+<!--        <item name="colorControlHighlightt">@color/blue</item>-->
+        <item name="colorControlHighlight">#00BCD4</item>
+    </style>
+
+    <style name="NavView" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        ...
+    </style>
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+<!--    //////// Size in numberpicker-->
+
+</resources>
