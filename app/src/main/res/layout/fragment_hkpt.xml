@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".fragment.hkpt">
+
+    <!-- 6. Tiêu đề "Tinh Bàn Huyền Không" -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tinh Bàn Huyền Không"
+        android:textColor="@color/lsred"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Group 1 (Yêu cầu 1-5): La bàn -->
+    <com.thanhtam.linhsondich.fragment.LaBanProView
+        android:id="@+id/laBanProView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <!-- Group 2: Các ô nhập liệu -->
+    <LinearLayout
+        android:id="@+id/inputGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/laBanProView"
+        app:layout_constraintStart_toStartOf="@+id/laBanProView"
+        app:layout_constraintTop_toBottomOf="@+id/laBanProView">
+
+        <!-- Phần chọn Vận -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vận"
+                android:textStyle="bold" />
+
+            <!-- THAY THẾ: Sử dụng Spinner (Dropdown) -->
+            <Spinner
+                android:id="@+id/vanSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/lsred"
+                android:gravity="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:popupBackground="@color/lsred" />
+
+        </LinearLayout>
+
+        <!-- Phần nhập Độ số -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Độ số"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/degreeInput"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/lsred"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Độ"
+                android:inputType="numberDecimal"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/darker_gray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

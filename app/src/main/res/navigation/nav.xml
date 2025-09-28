@@ -49,6 +49,7 @@
             android:id="@+id/action_nav_queNgauNhien_to_dichResult"
             app:destination="@id/dichResult" />
     </fragment>
+
     <fragment
         android:id="@+id/nav_LichTrachCat"
         android:name="com.thanhtam.linhsondich.fragment.LichTrachCat"
@@ -59,6 +60,13 @@
         android:name="com.thanhtam.linhsondich.fragment.LichTrachCatDetails"
         android:label="@string/lichtrachcat"
         tools:layout="@layout/fragment_lich_trach_cat_details" />
+    <fragment
+        android:id="@+id/nav_huyenKhongPhiTinh"
+        android:name="com.thanhtam.linhsondich.fragment.hkpt"
+        android:label="@string/hkpt"
+        tools:layout="@layout/fragment_hkpt" />
+
+
     <fragment
         android:id="@+id/nav_checkupdate"
         android:name="com.thanhtam.linhsondich.fragment.CheckUpdateFragment"

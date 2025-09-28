@@ -573,28 +573,28 @@ class CTDichResult {
     ) {
         when (tuchinh) {
             1 -> {
-                tu1.text = "(T)"
-                tu4.text = "(Ư)"
+                tu1.text = "Thế"
+                tu4.text = "Ứng"
             }
             2 -> {
-                tu2.text = "(T)"
-                tu5.text = "(Ư)"
+                tu2.text = "Thế"
+                tu5.text = "Ứng"
             }
             3 -> {
-                tu3.text = "(T)"
-                tu6.text = "(Ư)"
+                tu3.text = "Thế"
+                tu6.text = "Ứng"
             }
             4 -> {
-                tu4.text = "(T)"
-                tu1.text = "(Ư)"
+                tu4.text = "Thế"
+                tu1.text = "Ứng"
             }
             5 -> {
-                tu5.text = "(T)"
-                tu2.text = "(Ư)"
+                tu5.text = "Thế"
+                tu2.text = "Ứng"
             }
             6 -> {
-                tu6.text = "(T)"
-                tu3.text = "(Ư)"
+                tu6.text = "Thế"
+                tu3.text = "Ứng"
             }
         }
     }

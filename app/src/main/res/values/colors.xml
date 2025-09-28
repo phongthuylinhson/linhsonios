@@ -26,5 +26,6 @@
     <color name="mauvang">#B8860B</color>
     <color name="mauxam">#696969</color>
     <color name="mauxanh">#5198E6</color>
-
+    <color name="lsred">#c13122</color>
+    <color name="lsblack">#434345</color>
 </resources>

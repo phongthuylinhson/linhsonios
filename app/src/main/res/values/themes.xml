@@ -35,16 +35,19 @@
 <!--    </style>-->
 
     <style name="contain" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textStyle">bold</item>
-        <item name="fontFamily">@font/vl_dekar</item>
+        <item name="android:textColor">#434345</item>
+        <!-- 1. Trỏ tới font family bạn vừa tạo -->
+        <item name="android:fontFamily">@font/utm_family</item>
+        <!-- 2. Xóa dòng textStyle và fontFamily cũ -->
     </style>
+
+
     <style name="navigation_menu_them">
         <!--         Color of text and icon when SELECTED-->
-        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimary">#c13122</item>
         <!--        background color when SELECTED-->
 <!--        <item name="colorControlHighlightt">@color/blue</item>-->
-        <item name="colorControlHighlight">#00BCD4</item>
+        <item name="colorControlHighlight">@color/white</item>
     </style>
 
     <style name="NavView" parent="Theme.AppCompat.NoActionBar">
@@ -54,6 +57,15 @@
     <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >
         <item name="android:textColorPrimary">@android:color/black</item>
     </style>
-<!--    //////// Size in numberpicker-->
+
+    <style name="CungTinhBan" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:background">@drawable/cell_border</item>
+    </style>
+
+    <!--    //////// Size in numberpicker-->
 
 </resources>

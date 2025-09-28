@@ -22,24 +22,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-<!--        <com.google.android.gms.ads.AdView-->
-<!--            android:id="@+id/adView"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentBottom="true"-->
-<!--            android:layout_centerHorizontal="true"-->
-<!--            app:adSize="BANNER"-->
-<!--            app:adUnitId="@string/AdUnitID"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent">-->
-<!--        </com.google.android.gms.ads.AdView>-->
-
+        <!-- AppBarLayout chỉ chứa Toolbar -->
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/black"
+            android:background="#c13122"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -49,15 +37,26 @@
                 android:layout_height="wrap_content"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
-                app:title="BẬT KẾT NỐI MẠNG"
-                app:titleTextColor="@color/white" />
-        </com.google.android.material.appbar.AppBarLayout>
+                app:titleTextColor="@color/white">
 
+                <ImageView
+                    android:id="@+id/toolbar_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Logo ứng dụng"
+                    android:src="@drawable/logowhite" />
 
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout> <!-- Thẻ đóng của AppBarLayout -->
+
+        <!-- FragmentContainerView nằm ở đây, BÊN NGOÀI AppBarLayout -->
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             app:defaultNavHost="true"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -68,12 +67,13 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_menu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/black"
+        android:background="@color/lsred"
         android:theme="@style/navigation_menu_them"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/navi_menu" />

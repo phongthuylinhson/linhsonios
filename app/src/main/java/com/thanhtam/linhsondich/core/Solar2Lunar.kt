@@ -6,6 +6,7 @@ import kotlin.math.PI
 import kotlin.math.floor
 import kotlin.math.sin
 
+
 data class Solar2Lunar(var Ngay: Int, var Thang: Int, var Nam: Int, var Gio: Int, var Phut: Int) {
     var ngaydl = Ngay
     val thangdl = Thang
@@ -356,11 +357,16 @@ data class Solar2Lunar(var Ngay: Int, var Thang: Int, var Nam: Int, var Gio: Int
         if (giodl % 2 != 0) giodl += 1
         if (giodl == 24) giodl = 0
         //Log.d("canchigio", "_ngaythang: ${can[cangio.toInt()]} ${chi[giodl / 2]}")
-        return ("$giodlll:$phutdl - $ngaydl/$thangdl/$namdl dương lịch ( ${ntn[0]}/${ntn[1]}/${ntn[2]} âm lịch )" +
-                "\nGiờ ${can[cangio.toInt()]} ${chi[giodl / 2]}-Ngày " + can[canngay] + " " + chi[chingay]
-                + "-Tháng " + can[((ntn[2] * 12 + ntn[1] + 3) % 10)] + " " + chithang[ntn[1] - 1]
-                + "-Năm " + can[(ntn[2] + 6) % 10] + " " + chi[(ntn[2] + 8) % 12] + "\n" +
-                "Tiết ${tietKhi()}-Nguyệt lệnh " + nguyetLenh())
+        return ("Thời gian lập quẻ: $ngaydl/$thangdl/$namdl, ${
+            String.format(
+                "%02d",
+                giodlll
+            )
+        }:${String.format("%02d", phutdl)}      Theo Âm lịch: ${ntn[0]}/${ntn[1]}/${ntn[2]} ÂL" +
+                "\nCan Chi: Giờ ${can[cangio.toInt()]} ${chi[giodl / 2]}, Ngày " + can[canngay] + " " + chi[chingay]
+                + ", Tháng " + can[((ntn[2] * 12 + ntn[1] + 3) % 10)] + " " + chithang[ntn[1] - 1]
+                + ", Năm " + can[(ntn[2] + 6) % 10] + " " + chi[(ntn[2] + 8) % 12] + "\n" +
+                "Tiết khí: ${tietKhi()}     Nhật thần: " + chi[chingay] + "     Nguyệt lệnh: " + nguyetLenh())
     }
 
 
@@ -368,8 +374,8 @@ data class Solar2Lunar(var Ngay: Int, var Thang: Int, var Nam: Int, var Gio: Int
         //val tietkhi = tietkhi()
         return ("$ngaydl/$thangdl/$namdl dương lịch ( ${ntn[0]}/${ntn[1]}/${ntn[2]} âm lịch )" +
                 "\nNgày " + can[canngay] + " " + chi[chingay]
-                + "-Tháng " + can[((ntn[2] * 12 + ntn[1] + 3) % 10)] + " " + chithang[ntn[1] - 1]
-                + "-Năm " + can[(ntn[2] + 6) % 10] + " " + chi[(ntn[2] + 8) % 12] + "\n" +
+                + "Tháng " + can[((ntn[2] * 12 + ntn[1] + 3) % 10)] + " " + chithang[ntn[1] - 1]
+                + "Năm " + can[(ntn[2] + 6) % 10] + " " + chi[(ntn[2] + 8) % 12] + "\n" +
                 "Tiết " + nguyetLenh())
     }
 

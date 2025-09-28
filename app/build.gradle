@@ -1,18 +1,21 @@
+// Sửa lỗi: Di chuyển tất cả plugin vào đây
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-parcelize'
+    id 'kotlin-kapt'
 }
-apply plugin: 'kotlin-kapt'
+
 android {
+    // compileSdk 36 có thể còn mới, nếu gặp lỗi lạ, hãy thử hạ xuống 34
     compileSdk 36
 
     defaultConfig {
         applicationId "com.thanhtam.linhsondich"
         minSdk 21
         targetSdk 36
-        versionCode 1
-        versionName "1.0.0.1"
+        versionCode 2
+        versionName "1.0.0.2"
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -30,76 +33,82 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures{
+
+    // Sửa lỗi: Gộp hai khối buildFeatures thành một
+    buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 
-    buildFeatures {
-        dataBinding true
-    }
     namespace 'com.thanhtam.linhsondich'
 }
 
+// Khai báo biến phiên bản để dễ quản lý và đồng bộ
+def room_version = "2.6.1"
+def nav_version = "2.7.7" // Cập nhật phiên bản Navigation lên bản ổn định mới nhất
+def coroutines_version = "1.7.3" // Đồng bộ phiên bản coroutines
+def lifecycle_version = "2.8.3" // Cập nhật phiên bản Lifecycle
+
 dependencies {
-    implementation 'io.github.ShawnLin013:number-picker:2.4.13'
-    implementation platform('com.google.firebase:firebase-bom:29.3.0')
-    implementation 'com.google.firebase:firebase-analytics-ktx'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    implementation 'com.google.firebase:firebase-config-ktx:21.6.0'
-    implementation 'androidx.core:core-ktx:1.10.1'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
+    // UI & Core (Cập nhật lên các phiên bản ổn định mới hơn)
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.google.firebase:firebase-database-ktx:20.3.0'
-    implementation 'com.google.firebase:firebase-storage-ktx:20.3.0'
-    implementation 'com.google.android.things:androidthings:1.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation 'de.hdodenhof:circleimageview:3.1.0'
-    implementation "androidx.navigation:navigation-fragment-ktx:2.5.0"
-    implementation "androidx.navigation:navigation-ui-ktx:2.5.0"
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-    implementation("androidx.cardview:cardview:1.0.0")
-    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
-
-
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation "androidx.cardview:cardview:1.0.0"
     implementation 'androidx.preference:preference-ktx:1.2.1'
 
-    //// glide
+
+    // Navigation (Sử dụng biến phiên bản đã cập nhật)
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Lifecycle (Sử dụng biến phiên bản đã cập nhật)
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
+    // Room
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    androidTestImplementation "androidx.room:room-testing:$room_version"
+
+    // Coroutines (SỬA LỖI: Đồng bộ phiên bản)
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    // Firebase (Giữ nguyên BOM để tự quản lý phiên bản)
+    implementation platform('com.google.firebase:firebase-bom:29.3.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-config-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+
+    // Google Play Services
+    implementation 'com.google.android.play:review-ktx:2.0.2' // Sửa lỗi: Chỉ giữ bản KTX
+    implementation 'com.google.android.play:app-update-ktx:2.1.0'
+
+    // Third-party libraries
+    implementation 'io.github.ShawnLin013:number-picker:2.4.13'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
     implementation 'com.github.bumptech.glide:glide:4.12.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
-
-
-
-    // Room components
-    implementation "androidx.room:room-runtime:2.6.1"
-    kapt "androidx.room:room-compiler:2.6.1"
-    implementation "androidx.room:room-ktx:2.6.1"
-    androidTestImplementation "androidx.room:room-testing:2.6.1"
-
-    // Lifecycle components
-    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
-    implementation "androidx.lifecycle:lifecycle-common-java8:2.8.7"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7"
-
-    // Kotlin components
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.20"
-    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3"
-    //noinspection GradleDependency
-    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1"
-
-
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+    // Sửa lỗi: dùng 'kapt' thay vì 'annotationProcessor' cho dự án Kotlin
     implementation 'com.github.nisrulz:screenshott:2.0.0'
-
     implementation 'com.intuit.sdp:sdp-android:1.1.1'
     implementation 'com.intuit.ssp:ssp-android:1.1.1'
 
-    implementation 'com.google.android.play:review:2.0.2'
+    // Test
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation 'com.google.android.play:review-ktx:2.0.2'
-
-    implementation 'com.google.android.play:app-update-ktx:2.1.0'
+    // Các thư viện thừa hoặc không cần thiết đã được xóa bỏ
+    // - kotlin-stdlib
+    // - androidthings
+    // - play-services-review (bản Java)
 }

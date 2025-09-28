@@ -166,7 +166,7 @@ class LucHao : Fragment() {
                     putParcelable("Key.QueBien", ctLucHao._ChuoiQueBienLucHao())
                     putParcelable("Key.QueHo", ctLucHao._XuLyQueHoLucHao())
                     putParcelable("Key.CCNT", ntn.canChiNgayThang)
-                    putString("Key.SoTen", "Lục Hào")
+                    putString("Key.SoTen", "  PP: Lục Hào")
                     putParcelable(
                         "Key.TT",
                         NgayGioThangNamDL(ngay, gio, thang, nam, phut)

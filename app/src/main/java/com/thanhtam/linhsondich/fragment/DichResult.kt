@@ -135,7 +135,7 @@ class DichResult : Fragment() {
         HinhQue(binding.h13, null, _QueBien.h1,null)
         Log.d("chuoisoten", "onCreateView: $chuoisoten")
         binding.txttenqueho.text = _QueHo!!.tenque
-        if (chuoisoten!="Mai Hoa"){
+        if (chuoisoten != "  Mai Hoa") {
             binding.txttenqueho.text = ""
         }
         HinhQue(binding.h12, null, _QueHo.h6,chuoisoten)
@@ -280,7 +280,7 @@ class DichResult : Fragment() {
             }
         }
 
-        binding.txtQuechinh.text = "Quẻ Chính"
+        binding.txtQuechinh.text = "Quẻ Chủ"
         binding.txtQuebien.text = "Quẻ Biến"
         binding.txtLuangiaiQuechinh.text = _QueChinh.luangiai + "\n"
 
@@ -313,31 +313,31 @@ class DichResult : Fragment() {
         val chibien4 = _QueBien.chi4.substring(2)
         if (haodong.hd1 == 1 || haodong.hd2 == 1 || haodong.hd3 == 1) {
             if (chichinh1 == chibien1) {
-                phucngam = "-Nội Phục Ngâm"
+                phucngam = "     Nội Phục Ngâm"
                 noiphucngam = "npn"
             }
         }
         if (haodong.hd4 == 1 || haodong.hd5 == 1 || haodong.hd6 == 1) {
             if (chichinh4 == chibien4) {
-                phucngam = "-Ngoại Phục Ngâm"
+                phucngam = "     Ngoại Phục Ngâm"
                 ngoaiphucngam = "npn"
             }
         }
         if (noiphucngam == "npn" && ngoaiphucngam == "npn") {
-            phucngam = "-Phục Ngâm"
+            phucngam = "     Phục Ngâm"
         }
         if ((_QueChinh.h2 == 1 && chichinh1 == "Tí" && chibien1 == "Sửu") || (chichinh1 == "Sửu" && chibien1 == "Tí" && _QueBien.h2 == 1) || (chichinh1 == "Mão" && chibien1 == "Dần") || (chibien1 == "Mão" && chichinh1 == "Dần") || (chichinh1 == "Thìn" && chibien1 == "Mùi") || (chibien1 == "Thìn" && chichinh1 == "Mùi") || (_QueChinh.h2 == 0 && chichinh1 == "Tí" && chibien1 == "Tị") || (_QueBien.h2 == 0 && chibien1 == "Tí" && chichinh1 == "Tị")) {
-            phanngam = "-Nội Phản Ngâm"
+            phanngam = "     Nội Phản Ngâm"
             noiphanngam = "npn"
         }
         if ((_QueChinh.h5 == 1 && chichinh4 == "Ngọ" && chibien4 == "Mùi") || (chichinh4 == "Mùi" && chibien4 == "Ngọ" && _QueBien.h5 == 1) || (chichinh4 == "Dậu" && chibien4 == "Thân") || (chibien4 == "Dậu" && chichinh4 == "Thân") || (chichinh4 == "Tuất" && chibien4 == "Sửu") || (chibien4 == "Tuất" && chichinh4 == "Sửu") || (_QueChinh.h5 ==0 &&chichinh4 == "Ngọ" && chibien4 == "Hợi")|| (_QueBien.h5 ==0 &&chibien4 == "Ngọ" && chichinh4 == "Hợi")) {
-            phanngam = "-Ngoại Phản Ngâm"
+            phanngam = "     Ngoại Phản Ngâm"
             ngoaiphanngam = "npn"
         }
         if (noiphanngam == "npn" && ngoaiphanngam == "npn") {
-            phucngam = "-Phản Ngâm"
+            phucngam = "     Phản Ngâm"
         }
-        binding.txtntn.text = "$ntn-$chuoisoten$phucngam$phanngam" + if (CH == "") "" else "\n$CH"
+        binding.txtntn.text = "$ntn$phucngam$phanngam" + if (CH == "") "" else "\n$CH"
         
         return root
     }

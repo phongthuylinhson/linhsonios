@@ -50,22 +50,12 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.0">
 
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="@dimen/_200sdp"
-                            android:layout_height="0dp"
-                            android:alpha="0.2"
-                            android:src="@drawable/icon"
-                            app:layout_constraintBottom_toBottomOf="@id/chau"
-                            app:layout_constraintEnd_toEndOf="@+id/main_maihoa_thuong"
-                            app:layout_constraintStart_toStartOf="@+id/main_maihoa_thuong"
-                            app:layout_constraintTop_toTopOf="@+id/menupopup" />
 
                         <ImageView
                             android:id="@+id/h6"
                             android:layout_width="@dimen/_28sdp"
                             android:layout_height="@dimen/_4sdp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="15dp"
                             app:layout_constraintEnd_toStartOf="@+id/h12"
                             app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="parent"
@@ -242,6 +232,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="1pt"
                             android:layout_marginStart="2dp"
+                            android:layout_marginTop="10dp"
                             android:layout_marginEnd="2dp"
                             android:background="@drawable/border_table_dich1"
                             android:stretchColumns="*"
@@ -269,7 +260,7 @@
                                     android:gravity="center"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt6"
@@ -278,7 +269,7 @@
                                     android:gravity="left"
                                     android:text="Quan Quỷ"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi6"
@@ -287,7 +278,7 @@
                                     android:gravity="left"
                                     android:text="K.Tỵ"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk6"
@@ -296,7 +287,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/pt6"
@@ -305,7 +296,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_8sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt12"
@@ -316,7 +307,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:text="Phụ Mẫu"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi12"
@@ -325,7 +316,7 @@
                                     android:gravity="left"
                                     android:text="N.Tuất"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk12"
@@ -333,7 +324,7 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="left"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lth6"
@@ -342,7 +333,7 @@
                                     android:gravity="right"
                                     android:text="Đằng Xà"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
                             </TableRow>
 
                             <TableRow
@@ -364,7 +355,7 @@
                                     android:gravity="center"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt5"
@@ -373,7 +364,7 @@
                                     android:gravity="left"
                                     android:text="Phụ Mẫu"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi5"
@@ -382,7 +373,7 @@
                                     android:gravity="left"
                                     android:text="K.Mùi"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk5"
@@ -391,7 +382,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/pt5"
@@ -400,7 +391,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_8sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt11"
@@ -411,7 +402,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:text="Huynh Đệ"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi11"
@@ -420,7 +411,7 @@
                                     android:gravity="left"
                                     android:text="N.Thân"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk11"
@@ -429,7 +420,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lth5"
@@ -438,7 +429,7 @@
                                     android:gravity="right"
                                     android:text="Câu Trần"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
                             </TableRow>
 
                             <TableRow
@@ -460,7 +451,7 @@
                                     android:gravity="center"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt4"
@@ -469,7 +460,7 @@
                                     android:gravity="left"
                                     android:text="Huynh Đệ"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi4"
@@ -478,7 +469,7 @@
                                     android:gravity="left"
                                     android:text="Q.Sửu"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk4"
@@ -487,7 +478,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/pt4"
@@ -496,7 +487,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_8sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt10"
@@ -507,7 +498,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:text="Phụ Mẫu"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi10"
@@ -516,7 +507,7 @@
                                     android:gravity="left"
                                     android:text="C.Ngọ"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk10"
@@ -525,7 +516,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lth4"
@@ -534,7 +525,7 @@
                                     android:gravity="right"
                                     android:text="Chu Tước"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
                             </TableRow>
 
                             <TableRow
@@ -556,25 +547,25 @@
                                     android:gravity="center"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:gravity="left"
-                                    android:text="@null"
+                                    android:text="Phụ Mẫu"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:gravity="left"
-                                    android:text="@null"
+                                    android:text="G.Thìn"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk3"
@@ -583,7 +574,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/pt3"
@@ -592,7 +583,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_8sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt9"
@@ -604,7 +595,7 @@
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
 
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi9"
@@ -613,7 +604,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk9"
@@ -622,7 +613,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lth3"
@@ -631,7 +622,7 @@
                                     android:gravity="right"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
                             </TableRow>
 
                             <TableRow
@@ -653,7 +644,7 @@
                                     android:gravity="center"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt2"
@@ -662,7 +653,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi2"
@@ -671,7 +662,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk2"
@@ -680,7 +671,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/pt2"
@@ -689,7 +680,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_8sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt8"
@@ -700,7 +691,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi8"
@@ -709,7 +700,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk8"
@@ -718,7 +709,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lth2"
@@ -727,7 +718,7 @@
                                     android:gravity="right"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
                             </TableRow>
 
                             <TableRow
@@ -749,7 +740,7 @@
                                     android:gravity="center"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt1"
@@ -758,7 +749,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi1"
@@ -767,7 +758,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk1"
@@ -776,7 +767,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/pt1"
@@ -785,7 +776,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_8sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lt7"
@@ -796,7 +787,7 @@
                                     android:paddingLeft="@dimen/_2sdp"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/ltchi7"
@@ -805,7 +796,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/tk7"
@@ -814,7 +805,7 @@
                                     android:gravity="left"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/lth1"
@@ -823,7 +814,7 @@
                                     android:gravity="right"
                                     android:text="@null"
                                     android:textSize="@dimen/_9sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
                             </TableRow>
                         </TableLayout>
 
@@ -831,35 +822,51 @@
                             android:id="@+id/txt_coppyright"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:gravity="start"
                             android:text="@string/coppyright"
-                            android:textColor="@color/blue"
-                            android:textSize="@dimen/_10sdp"
-                            android:textStyle="bold"
-                            app:layout_constraintEnd_toEndOf="parent"
+                            android:textColor="@color/lsred"
+                            android:textSize="@dimen/_8sdp"
+                            android:textStyle=""
                             app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@+id/img_logo"
+                            app:layout_constraintTop_toTopOf="@+id/img_logo" />
+
+                        <ImageView
+                            android:id="@+id/img_logo"
+                            android:layout_width="68dp"
+                            android:layout_height="68dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/logo"
+                            app:layout_constraintBottom_toTopOf="@+id/view_barrie"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
 
                         <View
                             android:id="@+id/view_barrie"
                             android:layout_width="0dp"
                             android:layout_height="1dp"
-                            android:layout_marginStart="60dp"
-                            android:layout_marginEnd="60dp"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginEnd="1dp"
                             android:background="@drawable/border_gachduoi_tuvi"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/txt_coppyright" />
 
+
                         <TextView
                             android:id="@+id/txtntn"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="Giờ 12:00 - 13/8/2019 Dương Lịch (13/7/2019 Âm lịch)\n18 Giờ Ngày Ất Mùi Tháng Ất Sửu Năm Tân Sửu"
+                            android:layout_marginStart="5dp"
+                            android:gravity="start"
+                            android:text="13/8/2019 Dương Lịch (13/7/2019 Âm lịch)\n18 Giờ Ngày: Ất Mùi      Tháng: Ất Sửu      Năm: Tân Sửu"
                             android:textSize="@dimen/_9sdp"
-                            android:textStyle="bold"
+                            android:textStyle=""
                             app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/view_barrie" />
 
@@ -887,28 +894,29 @@
                             android:id="@+id/tuongquechinh"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/_10sdp"
+                            android:textSize="@dimen/_8sdp"
                             android:textStyle="bold"
-                            app:layout_constraintEnd_toStartOf="@+id/textView7"
-                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/txt_thuoctinh_quechinh"
+                            app:layout_constraintStart_toStartOf="@+id/txt_thuoctinh_quechinh"
                             app:layout_constraintTop_toBottomOf="@+id/txt_thuoctinh_quechinh" />
 
                         <TextView
                             android:id="@+id/tuongquebien"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/_10sdp"
+                            android:textSize="@dimen/_8sdp"
                             android:textStyle="bold"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/textView7"
+                            app:layout_constraintEnd_toEndOf="@+id/txt_thuoctinh_quebien"
+                            app:layout_constraintStart_toStartOf="@+id/txt_thuoctinh_quebien"
                             app:layout_constraintTop_toTopOf="@+id/tuongquechinh" />
+
 
                         <TextView
                             android:id="@+id/txttenque"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Hỏa Thiên Đại Hữu"
-                            android:textColor="@color/reda"
+                            android:textColor="@color/lsred"
                             android:textSize="@dimen/_10sdp"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="@+id/h1"
@@ -920,7 +928,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Hoả Thiên Đại Hữu"
-                            android:textColor="@color/reda"
+                            android:textColor="@color/lsred"
                             android:textSize="@dimen/_10sdp"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="@+id/h13"
@@ -931,8 +939,8 @@
                             android:id="@+id/txttenqueho"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/reda"
-                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lsred"
+                            android:textSize="@dimen/_8sdp"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="@+id/h7"
                             app:layout_constraintStart_toStartOf="@+id/h7"
@@ -943,7 +951,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="2dp"
-                            android:layout_marginTop="2dp"
+                            android:layout_marginTop="10dp"
                             android:layout_marginEnd="2dp"
                             app:layout_constraintTop_toBottomOf="@id/main_maihoa_thuong">
 
@@ -961,7 +969,7 @@
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     android:text="@string/thansat"
-                                    android:textColor="@color/reda"
+                                    android:textColor="@color/lsred"
                                     android:textSize="@dimen/_10sdp"
                                     android:textStyle="bold" />
 
@@ -971,7 +979,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Luận Giải"
+                                    android:text="Thông tin quẻ"
                                     android:textSize="@dimen/_10sdp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -1014,7 +1022,7 @@
                                         android:gravity="center_vertical"
                                         android:text="Hào 6 N.Thân"
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
 
                                     <TextView
                                         android:id="@+id/txt_thansat_hao6"
@@ -1023,7 +1031,7 @@
                                         android:layout_weight="3"
                                         android:text="Dương Nhẫn. Bạch Hổ. Dịch Mã. Ám Kim. Tai Sát. Kiếp Sát. Lộc Tồn."
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -1039,7 +1047,7 @@
                                         android:gravity="center_vertical"
                                         android:text="Hào 5"
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
 
                                     <TextView
                                         android:id="@+id/txt_thansat_hao5"
@@ -1048,7 +1056,7 @@
                                         android:layout_weight="3"
                                         android:text="Textview"
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -1064,7 +1072,7 @@
                                         android:gravity="center_vertical"
                                         android:text="Hào 4"
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
 
                                     <TextView
                                         android:id="@+id/txt_thansat_hao4"
@@ -1073,7 +1081,7 @@
                                         android:layout_weight="3"
                                         android:text="Textview"
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -1089,7 +1097,7 @@
                                         android:gravity="center_vertical"
                                         android:text="Hào 3"
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
 
                                     <TextView
                                         android:id="@+id/txt_thansat_hao3"
@@ -1098,7 +1106,7 @@
                                         android:layout_weight="3"
                                         android:text="Textview"
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -1114,7 +1122,7 @@
                                         android:gravity="center_vertical"
                                         android:text="Hào 2"
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
 
                                     <TextView
                                         android:id="@+id/txt_thansat_hao2"
@@ -1123,7 +1131,7 @@
                                         android:layout_weight="3"
                                         android:text="Textview"
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -1139,7 +1147,7 @@
                                         android:gravity="center_vertical"
                                         android:text="Hào 1"
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
 
                                     <TextView
                                         android:id="@+id/txt_thansat_hao1"
@@ -1148,7 +1156,7 @@
                                         android:layout_weight="3"
                                         android:text="Textview"
                                         android:textSize="@dimen/_9sdp"
-                                        android:textStyle="bold" />
+                                        android:textStyle="" />
                                 </LinearLayout>
                             </LinearLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -1191,7 +1199,7 @@
                                     android:layout_gravity="center"
                                     android:text="test2"
                                     android:textSize="@dimen/_10sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
 
                                 <TextView
                                     android:id="@+id/txt_quebien"
@@ -1209,7 +1217,7 @@
                                     android:layout_gravity="center"
                                     android:text="test4"
                                     android:textSize="@dimen/_10sdp"
-                                    android:textStyle="bold" />
+                                    android:textStyle="" />
                             </LinearLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -282,7 +282,7 @@ data class NTN(var Ngay: Long, var Thang: Long, var Nam: Long, var Gio: Int, var
                 "\nGiờ ${chi[giodl / 2]}-Ngày " + can[canngay] + " " + chi[chingay]
                 + "-Tháng " + can[((ntn[2] * 12 + ntn[1] + 3) % 10)] + " " + chithang[ntn[1] - 1]
                 + "-Năm " + can[(ntn[2] + 6) % 10] + " " + chi[(ntn[2] + 8) % 12] + "\n" +
-                "Tiết " + tietkhi[tt.toInt()]) + "-Nguyệt lệnh $nguyetlenh"
+                "Tiết " + tietkhi[tt.toInt()]) + " Nguyệt lệnh $nguyetlenh"
     }
 
     fun tietkhi(): String {
