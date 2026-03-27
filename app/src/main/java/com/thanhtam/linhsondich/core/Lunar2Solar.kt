@@ -280,7 +280,7 @@ data class Lunar2Solar(
                 "\nGiờ ${chi[giodl / 2]}-Ngày " + can[canngay] + " " + chi[chingay]
                 + "-Tháng " + can[((lunarYear * 12 + lunarMonth + 3) % 10)] + " " + chithang[lunarMonth - 1]
                 + "-Năm " + can[(lunarYear + 6) % 10] + " " + chi[(lunarYear + 8) % 12] + "\n" +
-                "Tiết " + tietkhi[tt.toInt()]) + " Nguyệt lệnh $nguyetlenh"
+                "Tiết: " + tietkhi[tt.toInt()]) + "    Nguyệt lệnh:  $nguyetlenh"
     }
 
     var canChiNgayThang = CanChiNgayThang(
