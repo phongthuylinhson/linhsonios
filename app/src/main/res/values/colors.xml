@@ -5,8 +5,9 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color> <!-- Có thể gộp với màu black ở dưới -->
+    <color name="white">#FFFFFFFF</color> <!-- Có thể gộp với màu white ở dưới -->
+
     <color name="underline">#BDB8B8</color>
     <color name="sliver">#696767</color>
     <color name="highlight">#B3DCB3</color>
@@ -15,17 +16,21 @@
     <color name="backgrounda">#FFFFFF</color>
     <color name="highlight1">#F3FACC</color>
     <color name="yellow">#B8860B</color>
-<!--    428DE0-->
-<!--    333332-->
+
     <color name="red">#ff0000</color>
     <color name="reda">#c13122</color>
     <color name="green">#009900</color>
     <color name="mainblue">#00BCD4</color>
-    <color name="mauxanhlc">#009900</color>
+
     <color name="maudo">#ff0000</color>
-    <color name="mauvang">#B8860B</color>
+    <color name="lstho">#B8860B</color>
     <color name="mauxam">#696969</color>
     <color name="mauxanh">#5198E6</color>
     <color name="lsred">#c13122</color>
     <color name="lsblack">#434345</color>
+    <color name="lsmoc">#046b25</color>
+    <color name="lskim">#a6a6a6</color>
+
+    <!-- Các màu bị trùng lặp đã được gộp hoặc có thể xóa đi nếu không cần thiết -->
+    <!-- Ví dụ: màu "black" và "white" đã được định nghĩa ở trên -->
 </resources>

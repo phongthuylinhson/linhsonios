@@ -39,68 +39,140 @@
         android:id="@+id/inputGroup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:baselineAligned="false"
         android:gravity="center"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="@+id/laBanProView"
         app:layout_constraintStart_toStartOf="@+id/laBanProView"
         app:layout_constraintTop_toBottomOf="@+id/laBanProView">
 
-        <!-- Phần chọn Vận -->
+        <!-- Dòng 1: Chọn vận và Hướng nhà -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Phần chọn Vận -->
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Vận"
-                android:textStyle="bold" />
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-            <!-- THAY THẾ: Sử dụng Spinner (Dropdown) -->
-            <Spinner
-                android:id="@+id/vanSpinner"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/lsred"
-                android:gravity="center"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
-                android:popupBackground="@color/lsred" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="Chọn vận"
+                    android:textColor="@color/lsred"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
+                <Spinner
+                    android:id="@+id/vanSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="0.7"
+                    android:background="@color/lsred"
+                    android:gravity="center"
+                    android:popupBackground="@color/lsred" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3" />
+
+            </LinearLayout>
+
+            <!-- Phần nhập Hướng nhà -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="Hướng nhà"
+                    android:textColor="@color/lsred"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/degreeInput"
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="0.7"
+                    android:background="@color/lsred"
+                    android:gravity="center"
+                    android:hint="Độ"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
         </LinearLayout>
 
-        <!-- Phần nhập Độ số -->
+        <!-- Dòng 2: Hướng cửa (Align với Hướng nhà) -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Khoảng trống bên trái -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Phần nhập Hướng cửa -->
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Độ số"
-                android:textStyle="bold" />
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/degreeInput"
-                android:layout_width="100dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/lsred"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Độ"
-                android:inputType="numberDecimal"
-                android:textColor="@android:color/white"
-                android:textColorHint="@android:color/darker_gray" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="Hướng cửa"
+                    android:textColor="@color/lsred"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/doorInput"
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_weight="0.7"
+                    android:background="@color/lsred"
+                    android:gravity="center"
+                    android:hint="Độ"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
