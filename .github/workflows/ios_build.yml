@@ -1,31 +1,41 @@
-name: Build iOS App
+name: Build iOS Framework
 
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch: # Cho phép bạn bấm nút build thủ công
+    branches: [ "master", "main" ]
+  pull_request:
+    branches: [ "master", "main" ]
+  workflow_dispatch: # Nút bấm build thủ công trên web
 
 jobs:
   build:
     runs-on: macos-latest
-    
+
     steps:
-      - uses: actions/checkout@v3
+    - name: Checkout Code
+      uses: actions/checkout@v4
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: gradle
 
-      - name: Setup Gradle
-        uses: gradle/gradle-build-action@v2
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
 
-      - name: Build Shared Framework
-        run: ./gradlew :shared:assembleSharedReleaseFramework
+    - name: Build iOS Framework (Arm64)
+      run: ./gradlew :shared:assembleSharedReleaseFrameworkIosArm64
 
-      - name: Upload Framework
-        uses: actions/upload-artifact@v3
-        with:
-          name: shared-framework
-          path: shared/build/bin/iosArm64/release/shared.framework
+    - name: Build iOS Framework (Simulator)
+      run: ./gradlew :shared:assembleSharedReleaseFrameworkIosSimulatorArm64
+
+    - name: Upload Framework Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ios-frameworks
+        path: |
+          shared/build/bin/iosArm64/releaseFramework/shared.framework
+          shared/build/bin/iosSimulatorArm64/releaseFramework/shared.framework
+        if-no-files-found: error
