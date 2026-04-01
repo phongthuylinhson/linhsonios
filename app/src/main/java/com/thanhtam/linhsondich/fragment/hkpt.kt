@@ -42,6 +42,13 @@ class hkpt : Fragment() {
         setupVanSpinner()
         setupDegreeInput()
 
+        // Lắng nghe thông tin bổ sung từ LaBanProView
+        binding.laBanProView.setOnExtraInfoListener { info ->
+            binding.tvKhongVi.text = "Không vị lưu thần: ${info.khongVi}"
+            binding.tvThanhMonChinh.text = "Thành môn Chính: ${info.thanhMonChinh}"
+            binding.tvThanhMonPhu.text = "Thành môn Phụ: ${info.thanhMonPhu}"
+        }
+
         // 3. Đọc dữ liệu đã lưu và hiển thị lên UI, đồng thời cập nhật la bàn lần đầu
         loadSavedData()
     }

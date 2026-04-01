@@ -5,7 +5,7 @@ import android.widget.CheckBox
 import com.thanhtam.linhsondich.model.chuoique
 import com.thanhtam.linhsondich.model.haodong
 
-data class CTLucHao(
+data class CTLucHaoUI(
     var cb1: CheckBox,
     var cb2: CheckBox,
     var cb3: CheckBox,

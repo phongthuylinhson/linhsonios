@@ -1,6 +1,8 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
+    id("org.jetbrains.compose") version "1.6.1"
+    id("kotlin-parcelize")
 }
 
 kotlin {
@@ -26,16 +28,32 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                // Thêm các thư viện common ở đây (vd: kotlinx-datetime, coroutines)
+                implementation(compose.runtime)
+                implementation(compose.foundation)
+                implementation(compose.material)
+                implementation(compose.ui)
+                implementation(compose.components.resources)
             }
         }
-        val commonTest by getting {
+        val androidMain by getting {
             dependencies {
-                implementation(kotlin("test"))
+                implementation("androidx.compose.ui:ui-tooling-preview:1.6.1")
             }
         }
-        val androidMain by getting
-        val iosMain by getting
+        
+        val iosMain by creating {
+            dependsOn(commonMain)
+        }
+
+        val iosX64Main by getting {
+            dependsOn(iosMain)
+        }
+        val iosArm64Main by getting {
+            dependsOn(iosMain)
+        }
+        val iosSimulatorArm64Main by getting {
+            dependsOn(iosMain)
+        }
     }
 }
 

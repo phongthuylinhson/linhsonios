@@ -7,6 +7,8 @@ import android.util.TypedValue
 import android.view.View
 import androidx.core.content.ContextCompat
 import com.thanhtam.linhsondich.R
+import com.thanhtam.linhsondich.core.HuyenKhongLogic
+import com.thanhtam.linhsondich.core.MountainInfo
 import kotlin.math.cos
 import kotlin.math.min
 import kotlin.math.sin
@@ -35,7 +37,14 @@ class LaBanProView @JvmOverloads constructor(
         val huongTinh: String // Số bên phải (Hướng)
     )
 
+    data class HkExtraInfo(
+        val khongVi: String,
+        val thanhMonChinh: String,
+        val thanhMonPhu: String
+    )
+
     // 2. KHAI BÁO CÁC BIẾN DỮ LIỆU VÀ TRẠNG THÁI
+    private val hkLogic = HuyenKhongLogic()
 
     // Danh sách 24 sơn vị đơn giản chỉ để VẼ VÒNG NGOÀI
     private val sonViList = listOf(
@@ -177,6 +186,13 @@ class LaBanProView @JvmOverloads constructor(
     private var radius = 0f
     private var arrowAngle: Float = 0f
     private var arrowExtension = 0f
+
+    // Listener để trả về thông tin bổ sung
+    private var extraInfoListener: ((HkExtraInfo) -> Unit)? = null
+
+    fun setOnExtraInfoListener(listener: (HkExtraInfo) -> Unit) {
+        this.extraInfoListener = listener
+    }
 
     // 3. KHAI BÁO CÁC ĐỐI TƯỢNG PAINT
     private val paintLine =
@@ -564,6 +580,18 @@ class LaBanProView @JvmOverloads constructor(
         )
         currentHuong = finalHuong
         huongIsThuan = huongThuan
+
+        // TÍNH TOÁN THÔNG TIN BỔ SUNG (GỌI LOGIC ĐA NỀN TẢNG)
+        tinhThongTinBoSung(facingDegrees)
+    }
+
+    private fun tinhThongTinBoSung(facingDegrees: Float) {
+        val extraInfo = hkLogic.calculateExtraInfo(facingDegrees, currentVan)
+        extraInfoListener?.invoke(HkExtraInfo(
+            khongVi = extraInfo.khongVi,
+            thanhMonChinh = extraInfo.thanhMonChinh,
+            thanhMonPhu = extraInfo.thanhMonPhu
+        ))
     }
 
     private fun anVanBanTamThoi(): Map<Int, Int> {

@@ -19,7 +19,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import androidx.navigation.Navigation
 import com.thanhtam.linhsondich.R
-import com.thanhtam.linhsondich.core.CTLucHao
+import com.thanhtam.linhsondich.core.CTLucHaoUI
 import com.thanhtam.linhsondich.core.Solar2Lunar
 import com.thanhtam.linhsondich.databinding.FragmentLucHaoBinding
 import com.thanhtam.linhsondich.model.*
@@ -151,7 +151,7 @@ class LucHao : Fragment() {
 
                 val ntn = Solar2Lunar(ngay, thang, nam, gio,phut)
                 val ctLucHao =
-                    CTLucHao(binding.cb1, binding.cb2, binding.cb3, binding.cb4, binding.cb5, binding.cb6, binding.h1, binding.h2, binding.h3, binding.h4, binding.h5, binding.h6)
+                    CTLucHaoUI(binding.cb1, binding.cb2, binding.cb3, binding.cb4, binding.cb5, binding.cb6, binding.h1, binding.h2, binding.h3, binding.h4, binding.h5, binding.h6)
                 val bundle = Bundle().apply {
                     putString("Key.NTN", ntn._ngaythang())
                     putString("Key.TIETKHI", ntn.nguyetLenh())
@@ -165,7 +165,7 @@ class LucHao : Fragment() {
                     putParcelable("Key.QueChinh", ctLucHao._ChuoiQueLucHao())
                     putParcelable("Key.QueBien", ctLucHao._ChuoiQueBienLucHao())
                     putParcelable("Key.QueHo", ctLucHao._XuLyQueHoLucHao())
-                    putParcelable("Key.CCNT", ntn.canChiNgayThang)
+                    putParcelable("Key.CCNT", ntn.canChiNgayThang as android.os.Parcelable)
                     putString("Key.SoTen", "  PP: Lục Hào")
                     putParcelable(
                         "Key.TT",

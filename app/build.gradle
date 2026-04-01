@@ -50,6 +50,8 @@ def coroutines_version = "1.7.3" // Đồng bộ phiên bản coroutines
 def lifecycle_version = "2.8.3" // Cập nhật phiên bản Lifecycle
 
 dependencies {
+    implementation project(':shared')
+
     // UI & Core (Cập nhật lên các phiên bản ổn định mới hơn)
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'

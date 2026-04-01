@@ -92,7 +92,7 @@ fun Coin(shaking: Boolean) {
         initialValue = 0f,
         targetValue = if (shaking) 360f else 0f,
         animationSpec = infiniteRepeatable(
-            animation =射线(200, easing = LinearEasing),
+            animation = tween(200, easing = LinearEasing),
             repeatMode = RepeatMode.Restart
         )
     )

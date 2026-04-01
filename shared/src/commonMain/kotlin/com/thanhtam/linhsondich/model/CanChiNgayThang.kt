@@ -1,5 +1,6 @@
 package com.thanhtam.linhsondich.model
 
+@Parcelize
 data class CanChiNgayThang(
     val canngay: Int,
     val chingay: Int,
@@ -8,4 +9,4 @@ data class CanChiNgayThang(
     val cannam: Int,
     val chinam: Int,
     val chigio: Int
-)
+) : Parcelable

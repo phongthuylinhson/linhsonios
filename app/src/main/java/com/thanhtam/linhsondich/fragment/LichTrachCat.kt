@@ -141,13 +141,13 @@ class LichTrachCat : Fragment() {
                 binding.txtGioTT.text = getGioTT(ntnam.JD().toInt(),ntnam.nguyetTuong())
             })}
 
-        var ntnduong=Lunar2Solar(viewModel.yyy,viewModel.mmm,viewModel.ddd,false,6,7,requireContext())
+        var ntnduong=Lunar2Solar(viewModel.yyy,viewModel.mmm,viewModel.ddd,false,6,7)
         binding.namduong.value=viewModel.yy
         binding.thangduong.value=viewModel.mm
         binding.ngayduong.value=viewModel.dd
         //// ngày âm
         binding.ngayam.setOnValueChangedListener { ngayam, i, i2 -> viewModel.ddd=ngayam.value
-            ntnduong=Lunar2Solar(viewModel.yyy,viewModel.mmm,viewModel.ddd,false,6,7,requireContext())
+            ntnduong=Lunar2Solar(viewModel.yyy,viewModel.mmm,viewModel.ddd,false,6,7)
             val b= NgayGioThangNamDL(ntnduong.lunar2solar().day,viewModel.hh,ntnduong.lunar2solar().month,ntnduong.lunar2solar().year,0)
             viewModel.TT.value=b
             viewModel.TT.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
@@ -164,7 +164,7 @@ class LichTrachCat : Fragment() {
             })}
         //// tháng âm
         binding.thangam.setOnValueChangedListener { thangam, i, i2 -> viewModel.mmm=thangam.value
-            ntnduong=Lunar2Solar(viewModel.yyy,viewModel.mmm,viewModel.ddd,false,6,7,requireContext())
+            ntnduong=Lunar2Solar(viewModel.yyy,viewModel.mmm,viewModel.ddd,false,6,7)
             val b= NgayGioThangNamDL(ntnduong.lunar2solar().day,viewModel.hh,ntnduong.lunar2solar().month,ntnduong.lunar2solar().year,0)
             viewModel.TT.value=b
             viewModel.TT.observe(viewLifecycleOwner, androidx.lifecycle.Observer {
@@ -181,7 +181,7 @@ class LichTrachCat : Fragment() {
             })}
         //// năm âm
         binding.namam.setOnValueChangedListener { namam, i, i2 -> viewModel.yyy=namam.value
-            ntnduong=Lunar2Solar(viewModel.yyy,viewModel.mmm,viewModel.ddd,false,6,7,requireContext())
+            ntnduong=Lunar2Solar(viewModel.yyy,viewModel.mmm,viewModel.ddd,false,6,7)
             val b= NgayGioThangNamDL(ntnduong.lunar2solar().day,viewModel.hh,ntnduong.lunar2solar().month,ntnduong.lunar2solar().year,0)
             viewModel.TT.value=b
             viewModel.TT.observe(viewLifecycleOwner, androidx.lifecycle.Observer {

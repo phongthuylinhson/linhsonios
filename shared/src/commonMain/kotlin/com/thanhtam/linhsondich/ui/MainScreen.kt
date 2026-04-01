@@ -88,3 +88,4 @@ fun MenuItem(title: String, icon: ImageVector, route: String, onNavigate: (Strin
         }
     }
 }
+

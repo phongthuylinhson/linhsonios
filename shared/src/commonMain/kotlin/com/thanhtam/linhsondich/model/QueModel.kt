@@ -1,5 +1,6 @@
 package com.thanhtam.linhsondich.model
 
+@Parcelize
 data class chuoique(
     var h1: Int,
     var h2: Int,
@@ -7,8 +8,9 @@ data class chuoique(
     var h4: Int,
     var h5: Int,
     var h6: Int
-)
+) : Parcelable
 
+@Parcelize
 data class haodong(
     val hd1: Int,
     val hd2: Int,
@@ -16,4 +18,4 @@ data class haodong(
     val hd4: Int,
     val hd5: Int,
     val hd6: Int
-)
+) : Parcelable

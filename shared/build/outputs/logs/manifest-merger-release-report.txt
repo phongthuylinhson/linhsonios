@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\UngDung\LSD_Multi\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest10443252490477157552.xml:2:13-83
+INJECTED from D:\UngDung\LSD_Multi\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest10443252490477157552.xml:2:13-83
+	package
+		INJECTED from D:\UngDung\LSD_Multi\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest10443252490477157552.xml
+	xmlns:android
+		ADDED from D:\UngDung\LSD_Multi\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest10443252490477157552.xml:2:23-81
+uses-sdk
+INJECTED from D:\UngDung\LSD_Multi\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest10443252490477157552.xml reason: use-sdk injection requested
+INJECTED from D:\UngDung\LSD_Multi\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest10443252490477157552.xml
+INJECTED from D:\UngDung\LSD_Multi\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest10443252490477157552.xml
+	android:targetSdkVersion
+		INJECTED from D:\UngDung\LSD_Multi\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest10443252490477157552.xml
+	android:minSdkVersion
+		INJECTED from D:\UngDung\LSD_Multi\shared\build\intermediates\tmp\ProcessLibraryManifest\release\tempAndroidManifest10443252490477157552.xml

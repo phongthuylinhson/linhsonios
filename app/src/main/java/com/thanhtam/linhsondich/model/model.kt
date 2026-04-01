@@ -10,20 +10,6 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class model(var _ThuongQuai: Int, var _HaQuai: Int) : Parcelable
 
-
-//@Parcelize
-//data class CanChiNgayThang(
-//    var canngay: Int,
-//    var chingay: Int,
-//    var canthang: Int,
-//    var chithang: Int,
-//    var cannam: Int,
-//    var chinam: Int,
-//    var chigio: Int,
-//) : Parcelable
-
-
-
 @Parcelize
 data class Que(
     var tenque: String,
@@ -2086,26 +2072,6 @@ data class _Que(
         return ___Que
     }
 }
-
-@Parcelize
-data class haodong(
-    var hd1: Int,
-    var hd2: Int,
-    var hd3: Int,
-    var hd4: Int,
-    var hd5: Int,
-    var hd6: Int
-) : Parcelable
-
-@Parcelize
-data class chuoique(
-    var h1: Int,
-    var h2: Int,
-    var h3: Int,
-    var h4: Int,
-    var h5: Int,
-    var h6: Int,
-) : Parcelable
 
 data class checkedt(
     val edty: TextView,

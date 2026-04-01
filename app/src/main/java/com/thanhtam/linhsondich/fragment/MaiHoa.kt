@@ -156,23 +156,52 @@ class MaiHoa : Fragment() {
                 val dd = ntn.Solar2Lunar()[0]
                 val mm = ntn.Solar2Lunar()[1]
                 val yy = ntn.Solar2Lunar()[2]
-                val que = CTMaiHoa(
-                    dd,
-                    mm,
-                    ((yy + 8) % 12) + 1,
-                    gio,
-                    somaihoa,
-                    binding.rdoThuong,
-                    binding.rdoSo,
-                    binding.rdoTen,
-                    binding.edtSo,
-                    binding.edtTen
-                )
-                if (que.checkedttenso()) {
-                    val queChinh = que._XuLyQueChinh()
-                    val haoDong = que._XuLyHaoDong()
-                    val queBien = que._XuLyQueBien()
-                    val queHo = que._XuLyQueHo()
+
+                val type = when {
+                    binding.rdoThuong.isChecked -> MaiHoaType.THUONG
+                    binding.rdoSo.isChecked -> MaiHoaType.SO
+                    binding.rdoTen.isChecked -> MaiHoaType.TEN
+                    else -> MaiHoaType.THUONG
+                }
+
+                val chuoiSoVal = binding.edtSo.text.toString()
+                val tenVal = binding.edtTen.text.toString()
+
+                // Validation logic moved from the old CTMaiHoa
+                var isValid = true
+                if (type == MaiHoaType.SO) {
+                    if (chuoiSoVal.isEmpty()) {
+                        binding.edtSo.error = "Bạn Chưa Nhập Số"
+                        isValid = false
+                    } else if (chuoiSoVal.contains("0") && (chuoiSoVal.length == 1 || chuoiSoVal.length == 3)) {
+                        binding.edtSo.error = "Không Nhập Số 0"
+                        isValid = false
+                    }
+                } else if (type == MaiHoaType.TEN) {
+                    if (tenVal.isEmpty()) {
+                        binding.edtTen.error = "Bạn Chưa Nhập Tên"
+                        isValid = false
+                    }
+                }
+
+                if (isValid) {
+                    // Using the CTMaiHoa from shared module
+                    val que = CTMaiHoa(
+                        dd,
+                        mm,
+                        ((yy + 8) % 12) + 1,
+                        gio,
+                        somaihoa,
+                        type,
+                        chuoiSoVal,
+                        tenVal
+                    )
+                    
+                    val queChinh = que.tinhQueChinh()
+                    val haoDong = que.tinhHaoDong()
+                    val queBien = que.tinhQueBien(queChinh, haoDong)
+                    val queHo = que.tinhQueHo(queChinh)
+                    
                     val bundle = Bundle().apply {
                         putString("Key.NTN", ntn._ngaythang())
                         putString("Key.TIETKHI", ntn.nguyetLenh())
@@ -359,18 +388,4 @@ class MaiHoa : Fragment() {
         }
         menu.show()
     }
-
-//    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-//        inflater.inflate(R.menu.menu_dich, menu)
-//        super.onCreateOptionsMenu(menu, inflater)
-//    }
-//
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        when (item.itemId) {
-//            R.id.menu_khoquedich -> {
-//                Navigation.findNavController(requireView()).navigate(R.id.nav_khoQueDich)
-//            }
-//        }
-//        return true
-//    }
 }

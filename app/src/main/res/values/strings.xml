@@ -1,19 +1,19 @@
 <resources>
-    <string name="app_name">Linh Sơn Dịch</string>
+    <string name="app_name">Phong Thủy Linh Sơn</string>
     <string name="home">Home</string>
     <string name="namphai">Nam Phái</string>
     <string name="bacphai">Bắc Phái</string>
     <string name="kholaso">Kho Lá Số</string>
     <string name="khoquedich">Kho Quẻ Dịch</string>
     <string name="tuvi_kinhdich_thaitue">FB Tử Vi Kinh Dịch Thái Tuế</string>
-    <string name="coppyright">Phần mềm lập quẻ Kinh Dịch</string>
-    <string name="vs">Versions: 1.0.0.0</string>
+    <string name="coppyright">Công cụ Phong Thủy</string>
+    <string name="vs">Versions: 1.0.0.3</string>
 
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="ngaunhien">Gieo Quẻ Ngẫu Nhiên</string>
     <string name="ccn">Bật Kết Nối Mạng</string>
-    <string name="hkpt">Huyền Không Phi Tinh</string>
+    <string name="hkpt">Công Cụ Phong Thủy</string>
 
     <!--    "yellow" B8860B-->
     <!--    "blue" 000000-->

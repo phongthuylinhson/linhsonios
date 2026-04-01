@@ -1,23 +1,24 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    // 1. Cập nhật phiên bản Kotlin ở đây
     ext.kotlin_version = '1.9.22'
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        // Cập nhật phiên bản Android Gradle Plugin nếu cần (tạm thời giữ nguyên 8.1.4)
         classpath 'com.android.tools.build:gradle:8.1.4'
-
-        // 2. Đảm bảo plugin này dùng đúng phiên bản đã khai báo ở trên
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // KMP sometimes needs this for certain compose versions
+        maven { url 'https://maven.pkg.jetbrains.space/public/p/compose/stable' }
+    }
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
